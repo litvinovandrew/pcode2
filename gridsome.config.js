@@ -7,7 +7,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/**/*.md',
-        typeName: 'BlogPost',
+        typeName: 'Post',
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: '_blank',
@@ -26,7 +26,14 @@ module.exports = {
       options: {
         cacheTime: 600000
       }
-    }
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`,
+        modulePath: `src/admin/index.js`
+      }
+    },
   ],
   css: {
     loaderOptions: {

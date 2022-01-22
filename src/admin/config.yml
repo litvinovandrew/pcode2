@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: litvinovandrew/pcode2
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    create: true
+    slug: "{{fields.slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug",  widget: "string", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters'], required: true}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Header img", name: "header_img", widget: "image"}
+      - {label: "Footer img", name: "footer_img", widget: "image", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false, required: false}
+      - {label: "Tags", name: "tags",  widget: "list" , default: ["writing"]}
+ 
