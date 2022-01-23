@@ -1,7 +1,7 @@
 module.exports = {
   siteName: "Pcode Store",
   siteDescription: "A starter project for Gridsome with Bootstrap and some other useful tools.",
-  siteUrl: "https://gridsome-starter-bootstrap.loke.dev",
+  siteUrl: "https://www.pcode.store",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
