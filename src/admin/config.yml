@@ -2,7 +2,7 @@ backend:
   name: github
   repo: litvinovandrew/pcode2
 
-media_folder: "static/uploads"
+media_folder: "uploads"
 public_folder: "/uploads"
 
 collections:

@@ -1,3 +1,9 @@
 [build]
   publish = "dist"
   command = "gridsome build"
+
+# Production context: all deploys from the Production branch 
+# set in your site’s Branches settings in the UI
+# will inherit these settings.
+[context.production]
+  environment = { GOOGLE_ANALYTICS_ID="G-QENS835RXN" }

@@ -96,7 +96,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Gridsome starter bootstrap"
+    title: "PCode - make development simple again"
   }
 };
 </script>
