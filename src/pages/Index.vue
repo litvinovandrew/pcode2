@@ -78,17 +78,13 @@
 
     <h3 class="mt-4 mb-4">We are social</h3>
     <p>
-      Facebook (to be done)
-    </p>
-
-    <p>
-      Twitter (to be done)
+      <a href="https://www.facebook.com/PcodeStore/">Facebook</a>
     </p>
     <p>
-      Linkedin (to be done)
+      <a href="https://www.youtube.com/channel/UCPrLM3ucvdKH-P4F1_Eq5iQ">Youtube</a>
     </p>
     <p>
-      Youtube (to be done)
+      <a href="https://medium.com/@pcode.store"> Medium </a>
     </p>
   </Layout>
 </template>
@@ -96,7 +92,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "PCode - make development simple again"
+    title: "Development should be simple"
   }
 };
 </script>
